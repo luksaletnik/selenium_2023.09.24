@@ -1,14 +1,8 @@
 from selenium import webdriver
 import time
-import datetime
 from selenium.webdriver.common.by import By
+from screenshot_function import *
 from selenium.common.exceptions import NoSuchElementException
-
-def make_screenshot(driver):
-    today = datetime.datetime.today()
-    short_date = today.strftime('_stamp%H%M%S')
-    screen_name = 'screen' + short_date + '.png'
-    driver.get_screenshot_as_file(screen_name)
 
 driver = webdriver.Chrome()
 driver.maximize_window()
