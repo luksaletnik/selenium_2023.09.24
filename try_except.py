@@ -10,6 +10,8 @@ except:
     print('Type:', type(price))
     price = 0
     print('The price is no valid! Try again!')
+    # podniesienie bledu mimo except:
+    # raise
 
 score = price * 3.3
 
